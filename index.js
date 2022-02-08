@@ -1,5 +1,12 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  word_array =word.split("")
+  let newWord = word_array.reverse().join("")
+  if (newWord === word) {
+    return (true)
+  }
+  else {
+    return (false)
+  }
 }
 
 /* 
@@ -7,7 +14,11 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
+  The code breaks down each letter of the word into
+  an array, reverses(flips) the array and then joins
+  the letters of the reversed array and sees if the first
+  word and fliped word matches.
+  If yes, returns true if no returns false
 */
 
 // You can run `node index.js` to view these console logs
